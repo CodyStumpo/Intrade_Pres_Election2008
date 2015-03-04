@@ -1,0 +1,20 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf480
+{\fonttbl\f0\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww14120\viewh10280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 It is in general very difficult to ascertain how the race for US president is going.  Both sides want you to think they are winning, and the multitude of polls is a sea of problematic data that would be very tricky to properly analyze.  Intrade of course has a market for the winner of the presidency, which is an excellent source of information.  But by investigating the joint dynamics of the 51 state electoral markets on intrade, I think we can ultimately get the clearest picture of how the race is going.  \
+\
+Fundamentally, the problem is similar to risk management of a portfolio, and so some of the same techniques can be adapted to serve us here.  We have 51 assets (state presidential contests) to invest in (let's simplify to imagine that this is a 2-party race and the Democratic contract in each state can be bought for near the price of 100-that state's Republican contract price).  If we are interested in the candidate's viewpoint, they have a portfolio of all 51 assets, with a fixed weight according to its electoral votes.   Each state race has a characteristic volatility, that we can empirically determine from the history of the intrade prices in that state's market.  Critically, each state is also correlated to each other state in a way that we can empirically determine from the history of the 51 markets' prices.   \
+\
+The standard technique in portfolio management is to simulate correlated series of returns on each asset out to the time horizon (election day, in our case) thousands of times, and observe the distribution of where the portfolio value ends up.  I have done that for the 51 pairs of electoral markets together, with the payout at the end of course being all or nothing in each state.  In a particular simulation, in a particular state, if the Republican price on election day is greater than the Democratic price, the electoral votes are awarded to the Republican.   I simulate credible price paths for the 51 markets from today to election day according to the likelihood of that 51-fold path.  Simulating from today 5000 times, we get a distribution of where the electoral tally might end up, as implied by the intrade markets.\
+\
+As of Sunday September 21, this technique reveals that even though national polls are coming in close to 50/50 and the intrade contract for Obama winning the Presidency is currently trading close to 50, intrade's electoral market traders implicitly believe Barack Obama has a 76.8% chance of winning 269 electoral votes or more and winning the presidency.  (I assume a 269-269 tie will be awarded to the Democrat by the new House of Representatives).  Obama was winning 273 states worth of electoral votes in intrade on Sep. 21, and so we might expect that to imply a chance slightly greater than 50% of victory.  But Nevada (5 EV), Ohio (20 EV) and Virginia (13 EV) were all less than a 5 point lead for McCain while McCain's likeliest flip was Colorado (9 EV) at 56-44.  Because Obama has a better chance of flipping some of the slim McCain leads than McCain does of flipping anything into his column, the simulation favored Obama to increase his total from 273.  While 273 was the likeliest outcome, the mean was at 283.\
+\
+Between now and the election, I'll provide updates of this view of the race, with analysis on how you can use it to trade.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 {{\NeXTGraphic stumpopoll9.21.png \width8498 \height5440
+}¬}}
